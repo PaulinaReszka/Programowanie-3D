@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples
+CMAKE_SOURCE_DIR = C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/Application/CMakeFiles/application.dir/depend.make
@@ -79,30 +79,30 @@ include src/Application/CMakeFiles/application.dir/flags.make
 src/Application/CMakeFiles/application.dir/application.cpp.obj: src/Application/CMakeFiles/application.dir/flags.make
 src/Application/CMakeFiles/application.dir/application.cpp.obj: src/Application/CMakeFiles/application.dir/includes_CXX.rsp
 src/Application/CMakeFiles/application.dir/application.cpp.obj: ../src/Application/application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/Application/CMakeFiles/application.dir/application.cpp.obj"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\application.dir\application.cpp.obj -c C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application\application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/Application/CMakeFiles/application.dir/application.cpp.obj"
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\application.dir\application.cpp.obj -c C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application\application.cpp
 
 src/Application/CMakeFiles/application.dir/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/application.dir/application.cpp.i"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application\application.cpp > CMakeFiles\application.dir\application.cpp.i
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application\application.cpp > CMakeFiles\application.dir\application.cpp.i
 
 src/Application/CMakeFiles/application.dir/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/application.dir/application.cpp.s"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application\application.cpp -o CMakeFiles\application.dir\application.cpp.s
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application\application.cpp -o CMakeFiles\application.dir\application.cpp.s
 
 src/Application/CMakeFiles/application.dir/utils.cpp.obj: src/Application/CMakeFiles/application.dir/flags.make
 src/Application/CMakeFiles/application.dir/utils.cpp.obj: src/Application/CMakeFiles/application.dir/includes_CXX.rsp
 src/Application/CMakeFiles/application.dir/utils.cpp.obj: ../src/Application/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/Application/CMakeFiles/application.dir/utils.cpp.obj"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\application.dir\utils.cpp.obj -c C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application\utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/Application/CMakeFiles/application.dir/utils.cpp.obj"
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\application.dir\utils.cpp.obj -c C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application\utils.cpp
 
 src/Application/CMakeFiles/application.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/application.dir/utils.cpp.i"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application\utils.cpp > CMakeFiles\application.dir\utils.cpp.i
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application\utils.cpp > CMakeFiles\application.dir\utils.cpp.i
 
 src/Application/CMakeFiles/application.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/application.dir/utils.cpp.s"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application\utils.cpp -o CMakeFiles\application.dir\utils.cpp.s
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application\utils.cpp -o CMakeFiles\application.dir\utils.cpp.s
 
 # Object files for target application
 application_OBJECTS = \
@@ -116,9 +116,9 @@ src/Application/libapplication.a: src/Application/CMakeFiles/application.dir/app
 src/Application/libapplication.a: src/Application/CMakeFiles/application.dir/utils.cpp.obj
 src/Application/libapplication.a: src/Application/CMakeFiles/application.dir/build.make
 src/Application/libapplication.a: src/Application/CMakeFiles/application.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libapplication.a"
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && $(CMAKE_COMMAND) -P CMakeFiles\application.dir\cmake_clean_target.cmake
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\application.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libapplication.a"
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && $(CMAKE_COMMAND) -P CMakeFiles\application.dir\cmake_clean_target.cmake
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\application.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/Application/CMakeFiles/application.dir/build: src/Application/libapplication.a
@@ -126,10 +126,10 @@ src/Application/CMakeFiles/application.dir/build: src/Application/libapplication
 .PHONY : src/Application/CMakeFiles/application.dir/build
 
 src/Application/CMakeFiles/application.dir/clean:
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application && $(CMAKE_COMMAND) -P CMakeFiles\application.dir\cmake_clean.cmake
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application && $(CMAKE_COMMAND) -P CMakeFiles\application.dir\cmake_clean.cmake
 .PHONY : src/Application/CMakeFiles/application.dir/clean
 
 src/Application/CMakeFiles/application.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\Application C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\Application\CMakeFiles\application.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\Application C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\Application\CMakeFiles\application.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : src/Application/CMakeFiles/application.dir/depend
 

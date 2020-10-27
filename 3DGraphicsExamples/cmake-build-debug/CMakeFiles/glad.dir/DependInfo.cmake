@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/3rdParty/src/glad/glad.c" "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj"
+  "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/3rdParty/src/glad/glad.c" "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

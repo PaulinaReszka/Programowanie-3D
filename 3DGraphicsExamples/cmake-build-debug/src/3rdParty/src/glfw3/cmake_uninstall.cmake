@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/install_manifest.txt" files)
+file(READ "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

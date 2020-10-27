@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples
+CMAKE_SOURCE_DIR = C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-
 include src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/progress.make
 
 src/3rdParty/src/glfw3/CMakeFiles/uninstall:
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3 && "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -P C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/cmake_uninstall.cmake
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3 && "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -P C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/cmake_uninstall.cmake
 
 uninstall: src/3rdParty/src/glfw3/CMakeFiles/uninstall
 uninstall: src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/build.make
@@ -86,10 +86,10 @@ src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/build
 
 src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/clean:
-	cd /d C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3 && $(CMAKE_COMMAND) -P CMakeFiles\uninstall.dir\cmake_clean.cmake
+	cd /d C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3 && $(CMAKE_COMMAND) -P CMakeFiles\uninstall.dir\cmake_clean.cmake
 .PHONY : src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/clean
 
 src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\3rdParty\src\glfw3 C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3 C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3\CMakeFiles\uninstall.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\3rdParty\src\glfw3 C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3 C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\src\3rdParty\src\glfw3\CMakeFiles\uninstall.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : src/3rdParty/src/glfw3/CMakeFiles/uninstall.dir/depend
 

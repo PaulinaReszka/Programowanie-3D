@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Triangle/app.cpp" "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/Exercises/Triangle/CMakeFiles/Triangle.dir/app.cpp.obj"
-  "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Triangle/main.cpp" "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/Exercises/Triangle/CMakeFiles/Triangle.dir/main.cpp.obj"
+  "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Triangle/app.cpp" "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/Exercises/Triangle/CMakeFiles/Triangle.dir/app.cpp.obj"
+  "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Triangle/main.cpp" "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/Exercises/Triangle/CMakeFiles/Triangle.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "PROJECT_DIR=\"C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Triangle\""
+  "PROJECT_DIR=\"C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Triangle\""
   "PROJECT_NAME=\"Triangle\""
   )
 
@@ -24,8 +24,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/src/CMakeFiles/glfw.dir/DependInfo.cmake"
-  "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/Application/CMakeFiles/application.dir/DependInfo.cmake"
+  "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/Application/CMakeFiles/application.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

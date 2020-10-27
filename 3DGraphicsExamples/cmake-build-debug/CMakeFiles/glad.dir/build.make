@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples
+CMAKE_SOURCE_DIR = C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/glad.dir/depend.make
@@ -79,16 +79,16 @@ include CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj: CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj: CMakeFiles/glad.dir/includes_C.rsp
 CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj: ../src/3rdParty/src/glad/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\glad.dir\src\3rdParty\src\glad\glad.c.obj   -c C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\3rdParty\src\glad\glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\glad.dir\src\3rdParty\src\glad\glad.c.obj   -c C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\3rdParty\src\glad\glad.c
 
 CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\3rdParty\src\glad\glad.c > CMakeFiles\glad.dir\src\3rdParty\src\glad\glad.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\3rdParty\src\glad\glad.c > CMakeFiles\glad.dir\src\3rdParty\src\glad\glad.c.i
 
 CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\src\3rdParty\src\glad\glad.c -o CMakeFiles\glad.dir\src\3rdParty\src\glad\glad.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\src\3rdParty\src\glad\glad.c -o CMakeFiles\glad.dir\src\3rdParty\src\glad\glad.c.s
 
 glad: CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj
 glad: CMakeFiles/glad.dir/build.make
@@ -105,6 +105,6 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 CMakeFiles/glad.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples\cmake-build-debug\CMakeFiles\glad.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples\cmake-build-debug\CMakeFiles\glad.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/glad.dir/depend
 

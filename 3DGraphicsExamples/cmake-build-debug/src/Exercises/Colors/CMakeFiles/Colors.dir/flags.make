@@ -5,13 +5,13 @@
 # compile CXX with C:/MinGW/bin/g++.exe
 C_FLAGS = -g   -std=gnu11
 
-C_DEFINES = -DPROJECT_DIR=\"C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors\" -DPROJECT_NAME=\"Colors\"
+C_DEFINES = -DPROJECT_DIR=\"C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors\" -DPROJECT_NAME=\"Colors\"
 
 C_INCLUDES = @CMakeFiles/Colors.dir/includes_C.rsp
 
 CXX_FLAGS = -g   -std=gnu++14
 
-CXX_DEFINES = -DPROJECT_DIR=\"C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors\" -DPROJECT_NAME=\"Colors\"
+CXX_DEFINES = -DPROJECT_DIR=\"C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors\" -DPROJECT_NAME=\"Colors\"
 
 CXX_INCLUDES = @CMakeFiles/Colors.dir/includes_CXX.rsp
 

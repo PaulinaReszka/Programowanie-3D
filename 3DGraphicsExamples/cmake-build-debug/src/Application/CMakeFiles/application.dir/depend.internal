@@ -7,10 +7,10 @@ src/Application/CMakeFiles/application.dir/application.cpp.obj
  ../src/3rdParty/src/glfw3/include/GLFW/glfw3.h
  ../src/3rdParty/src/stb/stb_image_write.h
  ../src/Application/application.h
- C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/application.cpp
- C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.h
+ C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/application.cpp
+ C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.h
 src/Application/CMakeFiles/application.dir/utils.cpp.obj
  ../src/3rdParty/include/KHR/khrplatform.h
  ../src/3rdParty/include/glad/glad.h
- C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.cpp
- C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.h
+ C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.cpp
+ C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.h

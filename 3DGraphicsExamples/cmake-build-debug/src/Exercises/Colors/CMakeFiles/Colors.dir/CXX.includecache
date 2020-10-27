@@ -76,9 +76,9 @@ string
 glad/glad.h
 ../src/Application/glad/glad.h
 
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/app.cpp
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/app.cpp
 app.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/app.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/app.h
 iostream
 -
 vector
@@ -86,21 +86,15 @@ vector
 tuple
 -
 Application/utils.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/Application/utils.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/Application/utils.h
 
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/app.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/app.h
 vector
 -
 Application/application.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/Application/application.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/Application/application.h
 Application/utils.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/Application/utils.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/Application/utils.h
 glad/glad.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/glad/glad.h
-
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/main.cpp
-app.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/app.h
-glad/glad.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Colors/glad/glad.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Colors/glad/glad.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Exercises/Triangle
+# Install script for directory: C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Exercises/Triangle
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

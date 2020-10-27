@@ -86,23 +86,23 @@ iomanip
 GLFW/glfw3.h
 -
 
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/application.cpp
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/application.cpp
 Application/application.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/Application/application.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/Application/application.h
 sstream
 -
 tuple
 -
 glad/glad.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/glad/glad.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/glad/glad.h
 utils.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.h
 3rdParty/src/stb/stb_image_write.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/3rdParty/src/stb/stb_image_write.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/3rdParty/src/stb/stb_image_write.h
 
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.cpp
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.cpp
 utils.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.h
 iostream
 -
 sstream
@@ -110,11 +110,11 @@ sstream
 fstream
 -
 glad/glad.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/glad/glad.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/glad/glad.h
 
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/utils.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/utils.h
 string
 -
 glad/glad.h
-C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/src/Application/glad/glad.h
+C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/src/Application/glad/glad.h
 

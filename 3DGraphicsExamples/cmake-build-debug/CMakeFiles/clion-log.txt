@@ -1,5 +1,27 @@
-"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\3DGraphicsExamples
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Paulina\Desktop\3dexamples\Programowanie-3D\3DGraphicsExamples
+-- The CXX compiler identification is GNU 6.3.0
+-- The C compiler identification is GNU 6.3.0
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Found Threads: TRUE  
 -- Using Win32 for window creation
+-- Looking for dinput.h
+-- Looking for dinput.h - not found
+-- Looking for xinput.h
+-- Looking for xinput.h - not found
+-- Found OpenGL: opengl32   
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug
+-- Build files have been written to: C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug

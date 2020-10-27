@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples
+# Install script for directory: C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,22 +34,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/cmake_install.cmake")
+  include("C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/3rdParty/src/glfw3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/Application/cmake_install.cmake")
+  include("C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/Application/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/Exercises/Triangle/cmake_install.cmake")
+  include("C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/Exercises/Triangle/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/src/Exercises/Colors/cmake_install.cmake")
+  include("C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/src/Exercises/Colors/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Paulina/Desktop/3dexamples/3DGraphicsExamples/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/3DGraphicsExamples/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
