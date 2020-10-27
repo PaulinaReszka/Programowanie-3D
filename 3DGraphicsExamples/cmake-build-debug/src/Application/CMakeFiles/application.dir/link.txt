@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libapplication.a  CMakeFiles/application.dir/application.cpp.obj CMakeFiles/application.dir/utils.cpp.obj
-C:\MinGW\bin\ranlib.exe libapplication.a
