@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Colors"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\3rdParty\;CMake Files\src\3rdParty\src\;CMake Files\src\3rdParty\src\glfw3\;CMake Files\src\3rdParty\src\glfw3\CMake\;CMake Files\src\3rdParty\src\glfw3\src\;CMake Files\src\Application\;CMake Files\src\Exercises\;CMake Files\src\Exercises\Triangle\;CMake Files\src\Exercises\Colors\;CMake Files\src\Exercises\Indices\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Colors">
+				<Option output="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Colors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_NAME=&quot;Colors&quot;"/>
+					<Add option="-DPROJECT_DIR=&quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Colors&quot;"/>
+					<Add directory="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/include"/>
+					<Add directory="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src"/>
+					<Add directory="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 Colors"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Colors/fast">
+				<Option output="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Colors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_NAME=&quot;Colors&quot;"/>
+					<Add option="-DPROJECT_DIR=&quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Colors&quot;"/>
+					<Add directory="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/include"/>
+					<Add directory="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src"/>
+					<Add directory="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 Colors/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/src/Exercises/Colors/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/cmake-build-debug/CMakeFiles/glad.dir/src/3rdParty/src/glad/glad.c.obj">
+			<Option target="Colors"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Colors/app.cpp">
+			<Option target="Colors"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Colors/app.h">
+			<Option target="Colors"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Colors/main.cpp">
+			<Option target="Colors"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\3rdParty\src\glfw3\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\src\3rdParty\src\glfw3\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\src\3rdParty\src\glfw3\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\src\3rdParty\src\glfw3\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\3rdParty\src\glfw3\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/3rdParty/src/glfw3/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\src\3rdParty\src\glfw3\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Application/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Application\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Triangle/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Exercises\Triangle\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Colors/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Exercises\Colors\"/>
+		</Unit>
+		<Unit filename="C:/Users/Paulina/Desktop/3dexamples/Programowanie-3D/src/Exercises/Indices/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Exercises\Indices\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
