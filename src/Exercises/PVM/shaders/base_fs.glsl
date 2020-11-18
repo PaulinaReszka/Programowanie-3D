@@ -9,6 +9,5 @@ layout(std140) uniform Modifiers {
 };
 
 void main() {
-    vFragColor.a = 1.0;
     vFragColor.rgb = strength * light * vertex_color.rgb;
 }

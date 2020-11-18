@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
-#include <glm/matrix.hpp>
+#include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
 
@@ -15,14 +15,9 @@
 
 void SimpleShapeApplication::init() {
     std::vector<GLushort> indices = {
-            0,1,2,3,4,5,5,6,4 // wypisujemy tyle elementów ile mamy wierzchołków
+            0,1,2,3,4,5,5,6,4
     };
-    GLuint idx_buffer_handle;
-    glGenBuffers(1,&idx_buffer_handle);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, idx_buffer_handle);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLushort), indices.data(),
-                 GL_STATIC_DRAW);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
 
     auto program = xe::create_program(std::string(PROJECT_DIR) + "/shaders/base_vs.glsl",
                                       std::string(PROJECT_DIR) + "/shaders/base_fs.glsl");
@@ -34,16 +29,21 @@ void SimpleShapeApplication::init() {
     }
 
     std::vector<GLfloat> vertices = {
-            -0.5f, 0.0f, 0.0f, 2.1, 2.6, 2.2,
-            0.5f, 0.0f, 0.0f, 2.1, 2.6, 2.2,
-            0.0f, 0.5f, 0.0f, 2.1, 2.6, 2.2,
+            -0.5f, 0.0f, 0.0f, 0.8, 0.2, 0.8,
+            0.5f, 0.0f, 0.0f, 0.8, 0.2, 0.8,
+            0.0f, 0.5f, 0.0f, 0.8, 0.2, 0.8,
             0.5f, -0.8f, 0.0f, 0.2, 0.7, 0.3,
             -0.5f, -0.8f, 0.0f, 0.2, 0.7, 0.3,
             0.5f, 0.0f, 0.0f, 0.2, 0.7, 0.3,
             -0.5f, 0.0f, 0.0f, 0.2, 0.7, 0.3,
-
-
     };
+
+    GLuint idx_buffer_handle;
+    glGenBuffers(1, &idx_buffer_handle);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, idx_buffer_handle);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLushort), indices.data(),
+                 GL_STATIC_DRAW);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
     GLuint v_buffer_handle;
     glGenBuffers(1, &v_buffer_handle);
@@ -63,6 +63,52 @@ void SimpleShapeApplication::init() {
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 
+    auto u_modifiers_index = glGetUniformBlockIndex(program, "Modifiers");
+    if (u_modifiers_index == GL_INVALID_INDEX) {
+        std::cout << "Cannot find Modifiers uniform block in program" << std::endl;
+    } else {
+        glUniformBlockBinding(program, u_modifiers_index, 0);
+    }
+    float strength = 0.9f;
+    float light[3] = {0.5f, 0.8f, 0.9f};
+
+    glm::mat4 M(1.0f);
+    glm::mat4 view = glm::lookAt(glm::vec3(4.0f, 0.0f,  2.8f),
+                                 glm::vec3(0.5f, 0.0f, 0.5f),
+                                 glm::vec3(0.7f, 1.0f, 1.9f));
+
+    glm::mat4 projectionMatrix = glm::perspective(
+            glm::radians(20.f),
+            220.0f / 98.0f,
+            0.1f,
+            100.0f
+    );
+    glm::mat4 PVM = projectionMatrix * view * M;
+
+    GLuint ubo_handle(0u);
+    glGenBuffers(1, &ubo_handle);
+    glBindBuffer(GL_UNIFORM_BUFFER, ubo_handle);
+    glBufferData(GL_UNIFORM_BUFFER, 8 * sizeof(float), nullptr, GL_STATIC_DRAW);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(float), &strength);
+    glBufferSubData(GL_UNIFORM_BUFFER, 4 * sizeof(float), 3 * sizeof(float), light);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 0, ubo_handle);
+
+
+    GLuint ubo_handle_pvm(0u);
+    glGenBuffers(1, &ubo_handle_pvm);
+    glBindBuffer(GL_UNIFORM_BUFFER, ubo_handle_pvm);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
+    glBindBuffer(GL_UNIFORM_BUFFER, 1);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 1, ubo_handle_pvm);
+
+    auto u_transformations_index = glGetUniformBlockIndex(program, "Transformations");
+    if (u_transformations_index == GL_INVALID_INDEX) {
+        std::cout << "Cannot find Transformations uniform block in program" << std::endl;
+    } else {
+        glUniformBlockBinding(program, u_transformations_index, 1);
+    }
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
     int w, h;
@@ -71,45 +117,6 @@ void SimpleShapeApplication::init() {
 
     glEnable(GL_DEPTH_TEST);
     glUseProgram(program);
-
-    auto u_modifiers_index = glGetUniformBlockIndex(program, "Modifiers");
-    if (u_modifiers_index == GL_INVALID_INDEX) {
-        std::cout << "Cannot find Modifiers uniform block in program" << std::endl;
-    } else {
-        glUniformBlockBinding(program, u_modifiers_index, 0);
-    }
-
-    GLuint ubo_handle(0u);
-    glGenBuffers(1,&ubo_handle);
-    glBindBuffer(GL_UNIFORM_BUFFER, ubo_handle);
-    glBufferData(GL_UNIFORM_BUFFER, 8 * sizeof(float), nullptr, GL_STATIC_DRAW);
-    float strength = 0.5;
-    float light[3] = {0.7, 0.2, 0.3};
-    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(float),&strength);
-    glBufferSubData(GL_UNIFORM_BUFFER,4 * sizeof(float), 3 * sizeof(float),light);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, ubo_handle);
-
-    glm::mat4 M(1.0f);
-    glm::mat4 view = glm::lookAt(glm::vec3(4.0f, 0.0f,  1.8f),
-                              glm::vec3(0.5f, 0.0f, 0.0f),
-                              glm::vec3(0.7f, 1.0f, 1.9f));
-
-    glm::mat4 projectionMatrix = glm::perspective(
-            glm::radians(20.f),
-            220.0f / 58.0f,
-            0.1f,
-            100.0f
-    );
-    glm::mat4 PVM = projectionMatrix * view * M;
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
-    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
-    glBindBuffer(GL_UNIFORM_BUFFER, 1);
-    GLuint ubo_handlepvm(0u);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 1, ubo_handlepvm);
-
-
 
 }
 
