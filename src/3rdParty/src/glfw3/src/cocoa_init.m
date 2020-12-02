@@ -152,7 +152,7 @@ static void createMenuBar(void)
     [windowMenu addItemWithTitle:@"Minimize"
                           action:@selector(performMiniaturize:)
                    keyEquivalent:@"m"];
-    [windowMenu addItemWithTitle:@"Zoom"
+    [windowMenu addItemWithTitle:@"Zoom1"
                           action:@selector(performZoom:)
                    keyEquivalent:@""];
     [windowMenu addItem:[NSMenuItem separatorItem]];
