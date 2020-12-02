@@ -15,12 +15,12 @@
 
 void SimpleShapeApplication::init() {
     std::vector<GLushort> indices = {
-            0, 1, 2,
-            3, 4, 5,
-            8, 7, 9,
-            9, 10, 11,
+            0, 2, 1,
+            0, 3, 2,
             5, 4, 6,
-            14, 13, 15
+            9, 8, 7,
+            10, 11, 12,
+            13, 15, 14
     };
 
 
