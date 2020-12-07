@@ -85,7 +85,7 @@ void SimpleShapeApplication::init() {
     if (u_modifiers_index == GL_INVALID_INDEX) {
         std::cout << "Cannot find Modifiers uniform block in program" << std::endl;
     } else {
-        glUniformBlockBinding(program, u_modifiers_index, 0);
+        glUniformBlockBinding(program, u_modifiers_index, 1);
     }
     float strength = 1.5;
     float light[3] = {0.7, 0.5, 0.8};
@@ -110,22 +110,14 @@ void SimpleShapeApplication::init() {
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(float), &strength);
     glBufferSubData(GL_UNIFORM_BUFFER, 4 * sizeof(float), 3 * sizeof(float), light);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, ubo_handle);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 1, ubo_handle);
 
-
-    GLuint ubo_handle_pvm(0u);
-    glGenBuffers(1, &ubo_handle_pvm);
-    glBindBuffer(GL_UNIFORM_BUFFER, ubo_handle_pvm);
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
-    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
-    glBindBuffer(GL_UNIFORM_BUFFER, 1);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 1, ubo_handle_pvm);
 
     auto u_transformations_index = glGetUniformBlockIndex(program, "Transformations");
     if (u_transformations_index == GL_INVALID_INDEX) {
         std::cout << "Cannot find Transformations uniform block in program" << std::endl;
     } else {
-        glUniformBlockBinding(program, u_transformations_index, 1);
+        glUniformBlockBinding(program, u_transformations_index, 0);
     }
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
@@ -133,8 +125,6 @@ void SimpleShapeApplication::init() {
     std::tie(w, h) = frame_buffer_size();
     glViewport(0, 0, w, h);
 
-    glEnable(GL_DEPTH_TEST);
-    glUseProgram(program);
 
     glEnable(GL_CULL_FACE);
     glFrontFace(GL_CCW);
@@ -150,13 +140,20 @@ void SimpleShapeApplication::init() {
                      glm::vec3(0.5f, 0.0f, 0.5f),
                      glm::vec3(0.7f, 1.0f, 0.5f));
 
+    glEnable(GL_DEPTH_TEST);
+    glUseProgram(program);
+
 }
+
 
 void SimpleShapeApplication::frame() {
     auto PVM = P_ * V_;
+    glGenBuffers(1, &u_pvm_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
 
     glBindVertexArray(vao_);
     glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, reinterpret_cast<GLvoid *>(0));

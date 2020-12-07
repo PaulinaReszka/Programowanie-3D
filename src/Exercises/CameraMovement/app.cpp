@@ -57,6 +57,7 @@ void SimpleShapeApplication::init() {
     };
 
     set_camera(new Camera);
+    set_controler(new CameraControler(camera()));
 
     GLuint idx_buffer_handle;
     glGenBuffers(1, &idx_buffer_handle);
@@ -92,13 +93,17 @@ void SimpleShapeApplication::init() {
     float strength = 1.5;
     float light[3] = {0.7, 0.5, 0.8};
 
+    int w, h;
+    std::tie(w, h) = frame_buffer_size();
+    glViewport(0, 0, w, h);
+
     camera_->look_at(glm::vec3(7.0f, 6.0f,  1.2f),
                      glm::vec3(0.5f, 0.0f, 0.5f),
                      glm::vec3(0.7f, 1.0f, 0.5f));
 
     camera_->perspective(
-            glm::radians(20.f),
-            320.0f / 258.0f,
+            glm::pi<float>() / 4.0f,
+            (float)w/h,
             0.1f,
             100.0f
     );
@@ -121,20 +126,10 @@ void SimpleShapeApplication::init() {
     }
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
-    int w, h;
-    std::tie(w, h) = frame_buffer_size();
-    glViewport(0, 0, w, h);
-
-    glEnable(GL_CULL_FACE);
-    glFrontFace(GL_CCW);
-    glCullFace(GL_BACK);
-
 
     glEnable(GL_DEPTH_TEST);
     glUseProgram(program);
-
 }
-
 
 void SimpleShapeApplication::frame() {
     auto PVM = camera_->projection() * camera_->view();
@@ -159,4 +154,27 @@ void SimpleShapeApplication::framebuffer_resize_callback(int w, int h) {
             0.1f,
             100.0f
     );
+}
+
+void SimpleShapeApplication::mouse_button_callback(int button, int action, int mods) {
+    Application::mouse_button_callback(button, action, mods);
+
+    if (controler_) {
+        double x, y;
+        glfwGetCursorPos(window_, &x, &y);
+
+        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
+            controler_->LMB_pressed(x, y);
+
+        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
+            controler_->LMB_released(x, y);
+    }
+
+}
+
+void SimpleShapeApplication::cursor_position_callback(double x, double y) {
+    Application::cursor_position_callback(x, y);
+    if (controler_) {
+        controler_->mouse_moved(x, y);
+    }
 }
