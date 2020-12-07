@@ -15,11 +15,11 @@
 
 void SimpleShapeApplication::init() {
     std::vector<GLushort> indices = {
-            0, 2, 1,
-            0, 3, 2,
-            5, 4, 6,
-            9, 8, 7,
-            10, 11, 12,
+            0, 1, 2,
+            3, 0, 2, //3, 0, 2
+            5, 4, 6, //5, 4, 6
+            9, 8, 7, //9, 8, 7
+            11, 10, 12,
             13, 15, 14
     };
 
@@ -47,9 +47,9 @@ void SimpleShapeApplication::init() {
             -0.5f, 0.0f, 0.5f, 0.8, 0.3, 0.1,
             0.0f, 1.0f, 0.0f, 0.8, 0.3, 0.1,
 
-            -0.5f, 0.0f, 0.5f, 0.7, 0.6, 0.3,
-            -0.5f, 0.0f, -0.5f, 0.7, 0.6, 0.3,
-            0.0f, 1.0f, 0.0f, 0.7, 0.6, 0.3,
+            -0.5f, 0.0f, 0.5f, 0.7, 0.2, 0.3,
+            -0.5f, 0.0f, -0.5f, 0.7, 0.2, 0.3,
+            0.0f, 1.0f, 0.0f, 0.7, 0.2, 0.3,
 
             -0.5f, 0.0f, -0.5f, 0.8, 0.2, 0.8,
             0.5f, 0.0f, -0.5f, 0.8, 0.2, 0.8,
@@ -91,9 +91,9 @@ void SimpleShapeApplication::init() {
     float light[3] = {0.7, 0.5, 0.8};
 
     glm::mat4 M(1.0f);
-    glm::mat4 view = glm::lookAt(glm::vec3(7.0f, 6.0f,  1.2f),
-                                 glm::vec3(0.5f, 0.0f, 0.5f),
-                                 glm::vec3(0.7f, 1.0f, 0.5f));
+    glm::mat4 view = glm::lookAt(glm::vec3(0.0f, 6.0f,  1.2f),
+                                 glm::vec3(0.0f, 0.0f, 0.0f),
+                                 glm::vec3(0.0f, 1.0f, 1.0f));
 
     glm::mat4 projectionMatrix = glm::perspective(
             glm::radians(20.f),
