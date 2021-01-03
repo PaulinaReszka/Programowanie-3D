@@ -70,26 +70,26 @@ void SimpleShapeApplication::frame() {
     auto orbital_rotation_period = 20.0f;
     auto orbital_rotation_angle = 2.0f*glm::pi<float>()*elapsed_time/orbital_rotation_period;
     auto x = 10*cos(orbital_rotation_angle);
-    auto y = 8*sin(orbital_rotation_angle);
-    auto O = glm::translate(glm::mat4(1.0f), glm::vec3{x,y,0.0});
+    auto z = 8*sin(orbital_rotation_angle);
+    auto O = glm::translate(glm::mat4(1.0f), glm::vec3{x,0.0,z});
     auto M = camera_->projection() * camera_->view() *O*R;
     pyramid_->draw(M, u_pvm_buffer_);
 
     auto r_moon = 3.0f;
     auto moon_orbital_rotation_angle = 2.0f*glm::pi<float>()*elapsed_time/10.0f;
     auto x_moon = r_moon*cos(moon_orbital_rotation_angle);
-    auto y_moon = r_moon*sin(moon_orbital_rotation_angle);
+    auto z_moon = r_moon*sin(moon_orbital_rotation_angle);
     auto R_moon = glm::rotate(glm::mat4(1.0f), moon_orbital_rotation_angle, glm::vec3{0, 1, 0});
-    auto O_moon = glm::translate(glm::mat4(1.0f), glm::vec3{x_moon,0.0,y_moon});
+    auto O_moon = glm::translate(glm::mat4(1.0f), glm::vec3{x_moon,0.0,z_moon});
     auto S = glm::scale(glm::mat4(1.0f), glm::vec3{0.5f, 0.5f, 0.5f});
     auto PVM_moon = camera_->projection() * camera_->view() * O * O_moon * R_moon * S;
     pyramid_->draw(PVM_moon, u_pvm_buffer_);
 
     auto satellite_orbital_rotation_angle = 2.0f*glm::pi<float>()*elapsed_time/2.0f;
     auto x_satellite = 1.5f*cos(satellite_orbital_rotation_angle);
-    auto y_satellite = 1.5f*sin(satellite_orbital_rotation_angle);
+    auto z_satellite = 1.5f*sin(satellite_orbital_rotation_angle);
     auto R_satellite = glm::rotate(glm::mat4(1.0f), satellite_orbital_rotation_angle, glm::vec3{0, 0, 1});
-    auto O_satellite = glm::translate(glm::mat4(1.0f), glm::vec3{x_satellite,y_satellite,0.0});
+    auto O_satellite = glm::translate(glm::mat4(1.0f), glm::vec3{x_satellite,0.0,z_satellite});
     auto S_satellite = glm::scale(glm::mat4(1.0f), glm::vec3{0.25f, 0.25f, 0.25f});
     auto PVM_satellite = camera_->projection() * camera_->view() * O * O_satellite * R_satellite * S_satellite;
     pyramid_->draw(PVM_satellite, u_pvm_buffer_);
