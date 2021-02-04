@@ -45,12 +45,9 @@ Pyramid::~Pyramid() {
 
 void Pyramid::draw(glm::mat4 &PVM, GLuint u_pvm_buffer_) {
     //Tu wywolujemy polecenie glDrawElements
-    glGenBuffers(1, &u_pvm_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
+
 
     glBindVertexArray(vao_);
     glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, reinterpret_cast<GLvoid *>(0));

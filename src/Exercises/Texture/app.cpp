@@ -55,6 +55,12 @@ void SimpleShapeApplication::init() {
             100.0f
     );
 
+    glGenBuffers(1, &u_pvm_buffer_);
+    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
+
 
 
     auto u_transformations_index = glGetUniformBlockIndex(program, "Transformations");
@@ -82,9 +88,6 @@ void SimpleShapeApplication::frame() {
     auto M = camera_->projection() * camera_->view();
     pyramid_->draw(M, u_pvm_buffer_);
 
-    glBindVertexArray(vao_);
-    glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, reinterpret_cast<GLvoid *>(0));
-    glBindVertexArray(0);
 }
 
 void SimpleShapeApplication::framebuffer_resize_callback(int w, int h) {

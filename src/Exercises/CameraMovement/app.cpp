@@ -117,6 +117,12 @@ void SimpleShapeApplication::init() {
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, ubo_handle);
 
+    glGenBuffers(1, &u_pvm_buffer_);
+    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
+
 
     auto u_transformations_index = glGetUniformBlockIndex(program, "Transformations");
     if (u_transformations_index == GL_INVALID_INDEX) {
@@ -133,12 +139,9 @@ void SimpleShapeApplication::init() {
 
 void SimpleShapeApplication::frame() {
     auto PVM = camera_->projection() * camera_->view();
-    glGenBuffers(1, &u_pvm_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
+
 
     glBindVertexArray(vao_);
     glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, reinterpret_cast<GLvoid *>(0));
